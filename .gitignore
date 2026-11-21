@@ -1,0 +1,54 @@
+# Dependências
+node_modules/
+web/node_modules/
+.pnpm-store/
+
+# Variáveis de ambiente (NUNCA versionar) — só o modelo .env.example sobe
+.env
+.env.*
+!.env.example
+render-env.txt
+render-key.txt
+
+# Chaves e certificados
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+
+# Build do painel e artefatos
+web/dist/
+dist/
+build/
+coverage/
+.vercel/
+.cache/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# Sistema operacional / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Configurações locais do Claude Code (podem ter caminhos e permissões da máquina)
+.claude/settings.local.json
+
+# Uploads e arquivos temporários
+tmp/
+uploads/
+
+# Projeto separado clonado nesta pasta (o "SO do negócio", não é o produto)
+MazyOS/

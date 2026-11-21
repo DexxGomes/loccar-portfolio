@@ -1,0 +1,57 @@
+{
+  "feature": "vistoria",
+  "timestamp": "2026-07-28T18:16:53.830Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-103": {
+      "status": "pass",
+      "testName": "@spec:AC-103 registra a vistoria de retirada",
+      "method": "tap"
+    },
+    "AC-104": {
+      "status": "pass",
+      "testName": "@spec:AC-104 uma reserva não pode ter duas vistorias do mesmo tipo",
+      "method": "tap"
+    },
+    "AC-105": {
+      "status": "pass",
+      "testName": "@spec:AC-105 combustível fora da faixa de oitavos é recusado",
+      "method": "tap"
+    },
+    "AC-106": {
+      "status": "pass",
+      "testName": "@spec:AC-106 não registra vistoria em reserva de outra locadora",
+      "method": "tap"
+    },
+    "AC-107": {
+      "status": "pass",
+      "testName": "@spec:AC-107 foto que não é imagem de verdade é recusada",
+      "method": "tap"
+    },
+    "AC-108": {
+      "status": "pass",
+      "testName": "@spec:AC-108 compara km rodado, combustível e avarias novas",
+      "method": "tap"
+    },
+    "AC-109": {
+      "status": "pass",
+      "testName": "@spec:AC-109 sem as duas vistorias não existe comparativo",
+      "method": "tap"
+    },
+    "AC-110": {
+      "status": "pass",
+      "testName": "@spec:AC-110 sugere o km inicial pela última vistoria do veículo",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

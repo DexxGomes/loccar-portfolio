@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   TEMA CLARO E ESCURO
+   Cada cor semântica é uma variável. O tema escuro só troca os valores —
+   nenhuma tela precisa saber qual tema está ativo.
+
+   Os tons do escuro NÃO são o claro invertido: o fundo é um grafite azulado
+   (#0B1120) e os cartões um pouco mais claros que ele, para a hierarquia
+   continuar legível sem brilho excessivo à noite.
+   ========================================================================== */
+@layer base {
+  :root {
+    --c-fundo: 248 250 252; /* slate-50  */
+    --c-superficie: 255 255 255; /* branco    */
+    --c-elevado: 248 250 252; /* slate-50  */
+    --c-sutil: 241 245 249; /* slate-100 */
+    --c-conteudo: 15 23 42; /* slate-900 */
+    --c-conteudo-2: 71 85 105; /* slate-600 */
+    --c-suave: 100 116 139; /* slate-500 */
+    /* Um pouco mais escuro que o slate-400 original: medido, o slate-400 dava
+       só 2,56:1 no branco e sumia em texto pequeno. Este dá 3,85:1 e continua
+       discreto o bastante para não competir com o conteúdo. */
+    --c-suave-2: 116 131 154;
+    --c-borda: 226 232 240; /* slate-200 */
+    --c-borda-forte: 203 213 225; /* slate-300 */
+    /* Cor da série nos gráficos (o azul da marca) */
+    --c-serie: 37 99 235; /* blue-600  */
+  }
+
+  .dark {
+    /* Fundo e cartão foram afastados de propósito: com #0B1120/#111827 a
+       separação media 1,06:1 e o cartão sumia na página. Assim dá 1,20:1,
+       que somado à borda deixa a hierarquia visível sem clarear demais. */
+    --c-fundo: 7 11 20; /* grafite quase preto */
+    --c-superficie: 23 31 48;
+    --c-elevado: 30 41 59; /* mais CLARO que a superfície, não mais escuro */
+    --c-sutil: 30 41 59;
+    --c-conteudo: 241 245 249;
+    --c-conteudo-2: 203 213 225;
+    --c-suave: 148 163 184;
+    --c-suave-2: 100 116 139;
+    --c-borda: 51 65 85;
+    --c-borda-forte: 71 85 105;
+    /* No escuro o azul precisa ser mais claro para destacar do fundo */
+    --c-serie: 96 165 250; /* blue-400 */
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    /* Faz as barras de rolagem e campos nativos acompanharem o tema */
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply antialiased bg-fundo text-conteudo-2;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Números alinhados em colunas (valores, datas, km) ficam mais legíveis. */
+  table,
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Anel de foco só para navegação por teclado (não polui o clique de mouse).
+     Sem "offset" nem raio fixo: o anel acompanha a forma de cada elemento,
+     inclusive dos botões redondos e do menu escuro. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-500/70;
+  }
+
+  /* Barra de rolagem discreta, no tom dos neutros de cada tema. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--c-borda-forte)) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    @apply bg-borda-forte rounded-full border-[3px] border-solid border-transparent bg-clip-content;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-suave-2 bg-clip-content;
+  }
+}
+
+/* ==========================================================================
+   Utilitários próprios usados pelo kit de componentes.
+   ========================================================================== */
+@layer utilities {
+  /* Esconde a barra de rolagem mantendo o scroll (abas, filtros no celular). */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Vidro fosco: usado no cabeçalho fixo e nos overlays. */
+  .glass {
+    @apply bg-superficie/80 backdrop-blur-xl backdrop-saturate-150;
+  }
+  .glass-dark {
+    @apply bg-ink-900/85 backdrop-blur-xl backdrop-saturate-150;
+  }
+
+  /* Brilho radial suave atrás de elementos de destaque (login, cards vazios). */
+  .glow-brand {
+    background-image: radial-gradient(
+      60% 60% at 50% 0%,
+      rgb(37 99 235 / 0.18) 0%,
+      transparent 100%
+    );
+  }
+
+  /* Malha quadriculada muito sutil (fundo de áreas vazias e do login). */
+  .bg-grid {
+    background-image: linear-gradient(rgb(148 163 184 / 0.09) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(148 163 184 / 0.09) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  /* Escalonamento da animação de entrada em listas (delay progressivo). */
+  .stagger > * {
+    animation: fade-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .stagger > *:nth-child(1) { animation-delay: 0.02s; }
+  .stagger > *:nth-child(2) { animation-delay: 0.06s; }
+  .stagger > *:nth-child(3) { animation-delay: 0.1s; }
+  .stagger > *:nth-child(4) { animation-delay: 0.14s; }
+  .stagger > *:nth-child(5) { animation-delay: 0.18s; }
+  .stagger > *:nth-child(6) { animation-delay: 0.22s; }
+  .stagger > *:nth-child(7) { animation-delay: 0.26s; }
+  .stagger > *:nth-child(8) { animation-delay: 0.3s; }
+}
+
+/* ==========================================================================
+   IMPRESSÃO / SALVAR EM PDF
+   O relatório mensal usa isto: some com o menu e a barra de topo, mantém as
+   cores da marca (o navegador tira fundos por padrão) e esconde o que for
+   marcado com [data-no-print] (seletor de mês, botões).
+   ========================================================================== */
+@media print {
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    background: #fff !important;
+  }
+  [data-no-print] {
+    display: none !important;
+  }
+  /* Evita cortar um cartão no meio de duas páginas. */
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   COMEMORAÇÃO
+   Papeizinhos que sobem e caem quando você conclui algo importante (aprovar
+   uma reserva, zerar o dia, terminar a configuração). Dura pouco mais de um
+   segundo, não recebe clique e some sozinha.
+
+   Cada papelzinho recebe --x, --giro e --atraso por style, no componente.
+--------------------------------------------------------------------------- */
+@keyframes confete-cai {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--x), 78vh, 0) rotate(var(--giro)) scale(1);
+  }
+}
+
+.confete-particula {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 9px;
+  height: 14px;
+  border-radius: 2px;
+  animation: confete-cai 1.5s cubic-bezier(0.2, 0.7, 0.3, 1) forwards;
+  animation-delay: var(--atraso);
+}
+
+/* Respeita quem prefere menos animação (acessibilidade). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

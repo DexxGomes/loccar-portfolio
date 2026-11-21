@@ -1,0 +1,67 @@
+{
+  "feature": "frota",
+  "timestamp": "2026-07-28T18:08:52.673Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-053": {
+      "status": "pass",
+      "testName": "@spec:AC-053 cadastra um veículo com o essencial e ele nasce disponível",
+      "method": "tap"
+    },
+    "AC-054": {
+      "status": "pass",
+      "testName": "@spec:AC-054 categoria fora da lista é recusada e a mensagem diz quais valem",
+      "method": "tap"
+    },
+    "AC-055": {
+      "status": "pass",
+      "testName": "@spec:AC-055 duas locadoras podem ter a mesma placa",
+      "method": "tap"
+    },
+    "AC-056": {
+      "status": "pass",
+      "testName": "@spec:AC-056 uma locadora não enxerga o veículo da outra",
+      "method": "tap"
+    },
+    "AC-057": {
+      "status": "pass",
+      "testName": "@spec:AC-057 mudar o preço do veículo não altera reserva já fechada",
+      "method": "tap"
+    },
+    "AC-058": {
+      "status": "pass",
+      "testName": "@spec:AC-058 filtra a frota por situação",
+      "method": "tap"
+    },
+    "AC-059": {
+      "status": "pass",
+      "testName": "@spec:AC-059 veículo com locação registrada não pode ser apagado",
+      "method": "tap"
+    },
+    "AC-060": {
+      "status": "pass",
+      "testName": "@spec:AC-060 guarda quilometragem, revisão e vencimentos",
+      "method": "tap"
+    },
+    "AC-061": {
+      "status": "pass",
+      "testName": "@spec:AC-061 registra uma manutenção no histórico do veículo",
+      "method": "tap"
+    },
+    "AC-062": {
+      "status": "pass",
+      "testName": "@spec:AC-062 não registra manutenção em veículo de outra locadora",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

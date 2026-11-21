@@ -1,0 +1,47 @@
+{
+  "feature": "multas",
+  "timestamp": "2026-07-28T18:12:51.766Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-082": {
+      "status": "pass",
+      "testName": "@spec:AC-082 registra uma multa como pendente de repasse",
+      "method": "tap"
+    },
+    "AC-083": {
+      "status": "pass",
+      "testName": "@spec:AC-083 multa sem descrição é recusada",
+      "method": "tap"
+    },
+    "AC-084": {
+      "status": "pass",
+      "testName": "@spec:AC-084 acompanha o repasse: pendente, repassada e paga",
+      "method": "tap"
+    },
+    "AC-085": {
+      "status": "pass",
+      "testName": "@spec:AC-085 situação de multa inválida é recusada",
+      "method": "tap"
+    },
+    "AC-086": {
+      "status": "pass",
+      "testName": "@spec:AC-086 filtra as multas por situação",
+      "method": "tap"
+    },
+    "AC-087": {
+      "status": "pass",
+      "testName": "@spec:AC-087 uma locadora não vê a multa da outra",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

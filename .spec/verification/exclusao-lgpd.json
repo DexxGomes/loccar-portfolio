@@ -1,0 +1,42 @@
+{
+  "feature": "exclusao-lgpd",
+  "timestamp": "2026-07-28T18:07:33.465Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-045": {
+      "status": "pass",
+      "testName": "@spec:AC-045 a exclusão LGPD enxerga o documento enviado para a reserva",
+      "method": "tap"
+    },
+    "AC-046": {
+      "status": "pass",
+      "testName": "@spec:AC-046 a exclusão LGPD enxerga a imagem enviada na conversa do WhatsApp",
+      "method": "tap"
+    },
+    "AC-047": {
+      "status": "pass",
+      "testName": "@spec:AC-047 a exclusão LGPD enxerga a foto da vistoria da locação",
+      "method": "tap"
+    },
+    "AC-048": {
+      "status": "pass",
+      "testName": "@spec:AC-048 não devolve arquivo repetido nem caminho vazio",
+      "method": "tap"
+    },
+    "AC-049": {
+      "status": "pass",
+      "testName": "@spec:AC-049 não devolve arquivo de OUTRO cliente",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

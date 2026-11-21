@@ -1,0 +1,47 @@
+{
+  "feature": "primeiros-passos",
+  "timestamp": "2026-07-28T18:04:54.416Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-033": {
+      "status": "pass",
+      "testName": "@spec:AC-033 lista os passos com progresso e exige login",
+      "method": "tap"
+    },
+    "AC-034": {
+      "status": "pass",
+      "testName": "@spec:AC-034 o passo dos dados do contrato se marca sozinho quando o cadastro fica completo",
+      "method": "tap"
+    },
+    "AC-035": {
+      "status": "pass",
+      "testName": "@spec:AC-035 preencher só parte dos dados não marca o passo",
+      "method": "tap"
+    },
+    "AC-036": {
+      "status": "pass",
+      "testName": "@spec:AC-036 o aviso no celular é opcional e não segura o guia",
+      "method": "tap"
+    },
+    "AC-037": {
+      "status": "pass",
+      "testName": "@spec:AC-037 o passo da frota conta os veículos que existem",
+      "method": "tap"
+    },
+    "AC-038": {
+      "status": "pass",
+      "testName": "@spec:AC-038 todo passo em aberto diz por que existe e para onde ir",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

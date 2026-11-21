@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "proximoId": 3,
+  "licoes": [
+    {
+      "id": "L-001",
+      "texto": "Toda regra que pune o cliente para sempre (bloquear, recusar, cancelar) precisa ser ESCOLHA do dono, nunca efeito colateral automatico de outra acao.",
+      "chave": "ASM_ABERTA::toda regra que pune o cliente para sempre bloquear recusar cancelar precisa ser escolha do dono nunca efeito colateral automatico de outra acao",
+      "sinal": "ASM_ABERTA",
+      "escopo": null,
+      "status": "candidata",
+      "recorrencia": 1,
+      "features": [
+        "reservas"
+      ],
+      "evidencias": [
+        {
+          "fonte": "ASM-020",
+          "feature": "reservas",
+          "quando": "2026-07-28T18:20:22.478Z",
+          "gitRev": "b1320fc"
+        }
+      ],
+      "penalidades": 0,
+      "criadaEm": "2026-07-28T18:20:22.478Z",
+      "ultimaVez": "2026-07-28T18:20:22.478Z"
+    },
+    {
+      "id": "L-002",
+      "texto": "Pergunta com consequencia juridica (prazo de guarda, dado pessoal) nao se resolve com palpite tecnico: registre como pergunta aberta e pare antes de implementar.",
+      "chave": "Q_ABERTA::pergunta com consequencia juridica prazo de guarda dado pessoal nao se resolve com palpite tecnico registre como pergunta aberta e pare antes de implementar",
+      "sinal": "Q_ABERTA",
+      "escopo": null,
+      "status": "candidata",
+      "recorrencia": 1,
+      "features": [
+        "exclusao-lgpd"
+      ],
+      "evidencias": [
+        {
+          "fonte": "Q-006",
+          "feature": "exclusao-lgpd",
+          "quando": "2026-07-28T18:20:39.049Z",
+          "gitRev": "55a9c35"
+        }
+      ],
+      "penalidades": 0,
+      "criadaEm": "2026-07-28T18:20:39.049Z",
+      "ultimaVez": "2026-07-28T18:20:39.049Z"
+    }
+  ]
+}

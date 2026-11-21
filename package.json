@@ -1,0 +1,45 @@
+{
+  "name": "sistema-locadoras",
+  "version": "0.1.0",
+  "description": "SaaS de reservas via WhatsApp para locadoras de veículos",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "dev:all": "concurrently -k -n api,painel -c blue,green \"nodemon src/server.js\" \"npm --prefix web run dev\"",
+    "db:schema": "node scripts/applySql.js db/schema.sql",
+    "db:seed": "node scripts/applySql.js db/seed.sql",
+    "db:migrate": "node scripts/applyMigrations.js",
+    "test": "node --test --test-concurrency=1 \"tests/*.test.js\"",
+    "test:web": "npm --prefix web test",
+    "test:tudo": "npm test && npm run test:web",
+    "create:owner": "node scripts/createOwner.js",
+    "set:login": "node scripts/setUserLogin.js",
+    "rename:tenant": "node scripts/renameTenant.js",
+    "set:token": "node scripts/setWhatsappToken.js",
+    "encrypt:tokens": "node scripts/encryptWhatsappTokens.js",
+    "set:owner-alert": "node scripts/setOwnerAlert.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.112.4",
+    "@supabase/supabase-js": "^2.45.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.0",
+    "node-cron": "^4.6.0",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "nodemon": "^3.1.4"
+  }
+}

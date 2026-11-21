@@ -1,0 +1,72 @@
+{
+  "feature": "endereco-locatario",
+  "timestamp": "2026-07-28T18:02:17.884Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-013": {
+      "status": "pass",
+      "testName": "@spec:AC-013 salva o endereço completo do cliente",
+      "method": "tap"
+    },
+    "AC-014": {
+      "status": "pass",
+      "testName": "@spec:AC-014 aceita CEP com traço e UF em minúscula, guardando limpo",
+      "method": "tap"
+    },
+    "AC-015": {
+      "status": "pass",
+      "testName": "@spec:AC-015 recusa CEP que não tem 8 dígitos",
+      "method": "tap"
+    },
+    "AC-016": {
+      "status": "pass",
+      "testName": "@spec:AC-016 recusa UF que não tem 2 letras",
+      "method": "tap"
+    },
+    "AC-017": {
+      "status": "pass",
+      "testName": "@spec:AC-017 recusa CPF que não tem 11 dígitos",
+      "method": "tap"
+    },
+    "AC-018": {
+      "status": "pass",
+      "testName": "@spec:AC-018 campo em branco limpa o dado em vez de guardar vazio",
+      "method": "tap"
+    },
+    "AC-019": {
+      "status": "pass",
+      "testName": "@spec:AC-019 não edita cliente que não existe",
+      "method": "tap"
+    },
+    "AC-020": {
+      "status": "pass",
+      "testName": "@spec:AC-020 não edita sem estar logado",
+      "method": "tap"
+    },
+    "AC-021": {
+      "status": "pass",
+      "testName": "@spec:AC-021 o contrato traz o endereço do locatário em uma linha",
+      "method": "tap"
+    },
+    "AC-022": {
+      "status": "pass",
+      "testName": "@spec:AC-022 sem endereço, o contrato não quebra e avisa que está vazio",
+      "method": "tap"
+    },
+    "AC-023": {
+      "status": "pass",
+      "testName": "@spec:AC-023 endereço pela metade não deixa vírgula nem traço solto",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

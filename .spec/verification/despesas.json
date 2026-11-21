@@ -1,0 +1,47 @@
+{
+  "feature": "despesas",
+  "timestamp": "2026-07-28T18:11:31.722Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-076": {
+      "status": "pass",
+      "testName": "@spec:AC-076 lança uma despesa",
+      "method": "tap"
+    },
+    "AC-077": {
+      "status": "pass",
+      "testName": "@spec:AC-077 despesa sem categoria é recusada",
+      "method": "tap"
+    },
+    "AC-078": {
+      "status": "pass",
+      "testName": "@spec:AC-078 a despesa pode ser ligada a um veículo",
+      "method": "tap"
+    },
+    "AC-079": {
+      "status": "pass",
+      "testName": "@spec:AC-079 lista só as despesas do período pedido",
+      "method": "tap"
+    },
+    "AC-080": {
+      "status": "pass",
+      "testName": "@spec:AC-080 excluir despesa que não existe avisa",
+      "method": "tap"
+    },
+    "AC-081": {
+      "status": "pass",
+      "testName": "@spec:AC-081 uma locadora não vê a despesa da outra",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

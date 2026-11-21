@@ -1,0 +1,5 @@
+# O painel da locadora não tem nada para indexar: tudo fica atrás de login e
+# lida com dado de cliente (CPF, CNH, contrato). O site de vendas do LocCar é
+# outro endereço — é lá que o Google deve entrar.
+User-agent: *
+Disallow: /

@@ -1,0 +1,905 @@
+{
+  "schema": 1,
+  "sinais": {
+    "ARQUIVO_ORFAO::—::src/app.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/app.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.215Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/config/db.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/config/db.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/config/env.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/config/env.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/config/supabase.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/config/supabase.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/jobs/expirePreReservations.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/jobs/expirePreReservations.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/jobs/scheduler.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/jobs/scheduler.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/jobs/sendReminders.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/jobs/sendReminders.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/middleware/auth.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/middleware/auth.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/middleware/errorHandler.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/middleware/errorHandler.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T15:19:32.218Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/middleware/rateLimit.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/middleware/rateLimit.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/middleware/whatsappSignature.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/middleware/whatsappSignature.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/blocklistRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/blocklistRepository.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/conversationRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/conversationRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/customerRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/customerRepository.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T15:19:32.218Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/dashboardRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/dashboardRepository.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.218Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/documentRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/documentRepository.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/expenseRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/expenseRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/fineRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/fineRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/inspectionRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/inspectionRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/leadRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/leadRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/maintenanceRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/maintenanceRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/moneyRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/moneyRepository.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/paymentRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/paymentRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/reminderRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/reminderRepository.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/reservationRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/reservationRepository.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/scheduleBlockRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/scheduleBlockRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/tenantRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/tenantRepository.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/repositories/vehicleRepository.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/repositories/vehicleRepository.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/blocklist.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/blocklist.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/conversations.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/conversations.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/customers.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/customers.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/dashboard.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/dashboard.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/expenses.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/expenses.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/fines.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/fines.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/health.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/health.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/inspections.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/inspections.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.253Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/leads.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/leads.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/payments.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/payments.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/reservations.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/reservations.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/scheduleBlocks.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/scheduleBlocks.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/tenant.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/tenant.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/timeline.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/timeline.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/vehicles.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/vehicles.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/routes/webhook.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/routes/webhook.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/server.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/server.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/services/ai/agent.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/ai/agent.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/ai/anthropic.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/ai/anthropic.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/services/ai/prompts.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/ai/prompts.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/services/ai/tools.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/ai/tools.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/services/asaas.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/asaas.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/contractService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/contractService.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/services/dashboardService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/dashboardService.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/services/documentService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/documentService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/expenseService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/expenseService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/fineService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/fineService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/inbound.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/inbound.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/inspectionService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/inspectionService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/leadService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/leadService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/lgpdService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/lgpdService.js",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:26:12.964Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/services/messaging.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/messaging.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/notify.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/notify.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/onboardingService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/onboardingService.js",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:19:32.219Z",
+      "gitRev": "55a9c35"
+    },
+    "ARQUIVO_ORFAO::—::src/services/paymentService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/paymentService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/reminderService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/reminderService.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/services/reservationService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/reservationService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/riskService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/riskService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/scheduleBlockService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/scheduleBlockService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/storage.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/storage.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/services/transcription.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/transcription.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/vehicleService.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/vehicleService.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/services/whatsapp.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/services/whatsapp.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/utils/asyncHandler.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/utils/asyncHandler.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/utils/categorias.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/utils/categorias.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/utils/crypto.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/utils/crypto.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ARQUIVO_ORFAO::—::src/utils/dates.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/utils/dates.js",
+      "ocorrencias": 6,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T15:44:28.254Z",
+      "gitRev": "b44e410"
+    },
+    "ARQUIVO_ORFAO::—::src/utils/httpError.js": {
+      "codigo": "ARQUIVO_ORFAO",
+      "feature": "—",
+      "ref": "src/utils/httpError.js",
+      "ocorrencias": 9,
+      "primeiraVez": "2026-07-28T15:19:32.219Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "ASM_ABERTA::endereco-locatario::ASM-006": {
+      "codigo": "ASM_ABERTA",
+      "feature": "endereco-locatario",
+      "ref": "ASM-006",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:26:12.960Z",
+      "ultimaVez": "2026-07-28T15:26:12.962Z",
+      "gitRev": "55a9c35"
+    },
+    "VERIFY_OBSOLETO::endereco-locatario::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "endereco-locatario",
+      "ref": "—",
+      "ocorrencias": 3,
+      "primeiraVez": "2026-07-28T15:26:12.962Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "ASM_ABERTA::exclusao-lgpd::ASM-013": {
+      "codigo": "ASM_ABERTA",
+      "feature": "exclusao-lgpd",
+      "ref": "ASM-013",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:26:12.962Z",
+      "ultimaVez": "2026-07-28T15:26:12.962Z",
+      "gitRev": "55a9c35"
+    },
+    "Q_ABERTA::exclusao-lgpd::Q-006": {
+      "codigo": "Q_ABERTA",
+      "feature": "exclusao-lgpd",
+      "ref": "Q-006",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:26:12.962Z",
+      "ultimaVez": "2026-07-28T15:26:12.963Z",
+      "gitRev": "55a9c35"
+    },
+    "VERIFY_OBSOLETO::login-cpf::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "login-cpf",
+      "ref": "—",
+      "ocorrencias": 3,
+      "primeiraVez": "2026-07-28T15:26:12.963Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "Q_ABERTA::mensagens-erro::Q-005": {
+      "codigo": "Q_ABERTA",
+      "feature": "mensagens-erro",
+      "ref": "Q-005",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:26:12.963Z",
+      "ultimaVez": "2026-07-28T15:26:12.963Z",
+      "gitRev": "55a9c35"
+    },
+    "ASM_ABERTA::resumo-dinheiro::ASM-008": {
+      "codigo": "ASM_ABERTA",
+      "feature": "resumo-dinheiro",
+      "ref": "ASM-008",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T15:26:12.963Z",
+      "ultimaVez": "2026-07-28T15:26:12.963Z",
+      "gitRev": "55a9c35"
+    },
+    "AC_SEM_TESTE::exclusao-lgpd::AC-052": {
+      "codigo": "AC_SEM_TESTE",
+      "feature": "exclusao-lgpd",
+      "ref": "AC-052",
+      "ocorrencias": 7,
+      "primeiraVez": "2026-07-28T15:38:20.130Z",
+      "ultimaVez": "2026-07-28T18:20:07.825Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::exclusao-lgpd::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "exclusao-lgpd",
+      "ref": "—",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-07-28T15:38:20.130Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::primeiros-passos::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "primeiros-passos",
+      "ref": "—",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-07-28T15:38:20.130Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::resumo-dinheiro::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "resumo-dinheiro",
+      "ref": "—",
+      "ocorrencias": 2,
+      "primeiraVez": "2026-07-28T15:38:20.130Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "Q_ABERTA::atendimento-whatsapp::Q-015": {
+      "codigo": "Q_ABERTA",
+      "feature": "atendimento-whatsapp",
+      "ref": "Q-015",
+      "ocorrencias": 3,
+      "primeiraVez": "2026-07-28T16:32:50.775Z",
+      "ultimaVez": "2026-07-28T18:20:07.824Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::bloqueios-timeline::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "bloqueios-timeline",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "ASM_ABERTA::cobrancas::ASM-034": {
+      "codigo": "ASM_ABERTA",
+      "feature": "cobrancas",
+      "ref": "ASM-034",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::cobrancas::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "cobrancas",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::despesas::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "despesas",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::frota::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "frota",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::leads::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "leads",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::mensagens-erro::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "mensagens-erro",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::multas::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "multas",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "ASM_ABERTA::reservas::ASM-020": {
+      "codigo": "ASM_ABERTA",
+      "feature": "reservas",
+      "ref": "ASM-020",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::reservas::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "reservas",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "ASM_ABERTA::vistoria::ASM-030": {
+      "codigo": "ASM_ABERTA",
+      "feature": "vistoria",
+      "ref": "ASM-030",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    },
+    "VERIFY_OBSOLETO::vistoria::—": {
+      "codigo": "VERIFY_OBSOLETO",
+      "feature": "vistoria",
+      "ref": "—",
+      "ocorrencias": 1,
+      "primeiraVez": "2026-07-28T16:32:50.776Z",
+      "ultimaVez": "2026-07-28T16:32:50.776Z",
+      "gitRev": "b1320fc"
+    }
+  }
+}

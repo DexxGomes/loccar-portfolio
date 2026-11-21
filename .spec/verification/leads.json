@@ -1,0 +1,47 @@
+{
+  "feature": "leads",
+  "timestamp": "2026-07-28T18:14:13.207Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-088": {
+      "status": "pass",
+      "testName": "@spec:AC-088 registra um lead e ele entra como novo",
+      "method": "tap"
+    },
+    "AC-089": {
+      "status": "pass",
+      "testName": "@spec:AC-089 lead sem nome é recusado",
+      "method": "tap"
+    },
+    "AC-090": {
+      "status": "pass",
+      "testName": "@spec:AC-090 e-mail inválido é recusado",
+      "method": "tap"
+    },
+    "AC-091": {
+      "status": "pass",
+      "testName": "@spec:AC-091 move o lead pelo funil",
+      "method": "tap"
+    },
+    "AC-092": {
+      "status": "pass",
+      "testName": "@spec:AC-092 etapa de funil inválida é recusada",
+      "method": "tap"
+    },
+    "AC-093": {
+      "status": "pass",
+      "testName": "@spec:AC-093 uma locadora não vê o lead da outra",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

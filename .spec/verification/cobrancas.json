@@ -1,0 +1,57 @@
+{
+  "feature": "cobrancas",
+  "timestamp": "2026-07-28T18:18:13.909Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-111": {
+      "status": "pass",
+      "testName": "@spec:AC-111 registra uma cobrança como pendente",
+      "method": "tap"
+    },
+    "AC-112": {
+      "status": "pass",
+      "testName": "@spec:AC-112 cobrança vencida aparece como vencida, sem job nenhum",
+      "method": "tap"
+    },
+    "AC-113": {
+      "status": "pass",
+      "testName": "@spec:AC-113 cobrança a vencer continua pendente",
+      "method": "tap"
+    },
+    "AC-114": {
+      "status": "pass",
+      "testName": "@spec:AC-114 marca a cobrança como paga",
+      "method": "tap"
+    },
+    "AC-115": {
+      "status": "pass",
+      "testName": "@spec:AC-115 uma locadora não vê a cobrança da outra",
+      "method": "tap"
+    },
+    "AC-116": {
+      "status": "pass",
+      "testName": "@spec:AC-116 gera diárias e caução a partir da reserva",
+      "method": "tap"
+    },
+    "AC-117": {
+      "status": "pass",
+      "testName": "@spec:AC-117 não gera as cobranças da mesma reserva duas vezes",
+      "method": "tap"
+    },
+    "AC-118": {
+      "status": "pass",
+      "testName": "@spec:AC-118 sem a chave do PIX configurada, o sistema explica em vez de quebrar",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

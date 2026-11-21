@@ -1,0 +1,67 @@
+{
+  "feature": "resumo-dinheiro",
+  "timestamp": "2026-07-28T18:03:36.275Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-024": {
+      "status": "pass",
+      "testName": "@spec:AC-024 o que entrou NÃO inclui a caução (é dinheiro do cliente, não receita)",
+      "method": "tap"
+    },
+    "AC-025": {
+      "status": "pass",
+      "testName": "@spec:AC-025 soma os gastos do período",
+      "method": "tap"
+    },
+    "AC-026": {
+      "status": "pass",
+      "testName": "@spec:AC-026 o saldo é o que entrou menos o que saiu, sem a caução inflar",
+      "method": "tap"
+    },
+    "AC-027": {
+      "status": "pass",
+      "testName": "@spec:AC-027 separa o que falta receber e o que já venceu",
+      "method": "tap"
+    },
+    "AC-028": {
+      "status": "pass",
+      "testName": "@spec:AC-028 mostra a caução que está em mãos",
+      "method": "tap"
+    },
+    "AC-029": {
+      "status": "pass",
+      "testName": "@spec:AC-029 mostra as multas ainda não repassadas",
+      "method": "tap"
+    },
+    "AC-030": {
+      "status": "pass",
+      "testName": "@spec:AC-030 explica para onde foram os gastos, do maior para o menor",
+      "method": "tap"
+    },
+    "AC-031": {
+      "status": "pass",
+      "testName": "@spec:AC-031 período antigo sem movimento devolve zeros, não quebra",
+      "method": "tap"
+    },
+    "AC-032": {
+      "status": "pass",
+      "testName": "@spec:AC-032 exige login",
+      "method": "tap"
+    },
+    "AC-050": {
+      "status": "pass",
+      "testName": "@spec:AC-050 o período \"Este mês\" vai do dia 1 do mês corrente até agora",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

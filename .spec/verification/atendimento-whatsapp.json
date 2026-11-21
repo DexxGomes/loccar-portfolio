@@ -1,0 +1,72 @@
+{
+  "feature": "atendimento-whatsapp",
+  "timestamp": "2026-07-28T18:19:32.564Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-119": {
+      "status": "pass",
+      "testName": "@spec:AC-119 o handshake da Meta é respondido com o desafio",
+      "method": "tap"
+    },
+    "AC-120": {
+      "status": "pass",
+      "testName": "@spec:AC-120 handshake com token errado é recusado",
+      "method": "tap"
+    },
+    "AC-121": {
+      "status": "pass",
+      "testName": "@spec:AC-121 em produção, entrega sem assinatura é recusada",
+      "method": "tap"
+    },
+    "AC-122": {
+      "status": "pass",
+      "testName": "@spec:AC-122 a mesma mensagem não é processada duas vezes",
+      "method": "tap"
+    },
+    "AC-123": {
+      "status": "pass",
+      "testName": "@spec:AC-123 lista só as conversas que precisam de atendimento humano",
+      "method": "tap"
+    },
+    "AC-124": {
+      "status": "pass",
+      "testName": "@spec:AC-124 uma locadora não lê a conversa da outra",
+      "method": "tap"
+    },
+    "AC-125": {
+      "status": "pass",
+      "testName": "@spec:AC-125 resolver a conversa devolve o atendimento à IA",
+      "method": "tap"
+    },
+    "AC-126": {
+      "status": "pass",
+      "testName": "@spec:AC-126 a análise aponta documentação incompleta",
+      "method": "tap"
+    },
+    "AC-127": {
+      "status": "pass",
+      "testName": "@spec:AC-127 CNH vencida é risco alto",
+      "method": "tap"
+    },
+    "AC-128": {
+      "status": "pass",
+      "testName": "@spec:AC-128 cliente na blocklist é risco alto",
+      "method": "tap"
+    },
+    "AC-129": {
+      "status": "pass",
+      "testName": "@spec:AC-129 cliente sem histórico é informado como aviso neutro",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

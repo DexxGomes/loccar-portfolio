@@ -1,0 +1,87 @@
+{
+  "feature": "reservas",
+  "timestamp": "2026-07-28T18:10:11.933Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-063": {
+      "status": "pass",
+      "testName": "@spec:AC-063 mostra os carros livres no período, com diárias e total",
+      "method": "tap"
+    },
+    "AC-064": {
+      "status": "pass",
+      "testName": "@spec:AC-064 carro já reservado some da lista de disponíveis",
+      "method": "tap"
+    },
+    "AC-065": {
+      "status": "pass",
+      "testName": "@spec:AC-065 a diária é bloco de 24h arredondado para cima, mínimo 1",
+      "method": "tap"
+    },
+    "AC-066": {
+      "status": "pass",
+      "testName": "@spec:AC-066 cria a pré-reserva com os valores congelados e prazo",
+      "method": "tap"
+    },
+    "AC-067": {
+      "status": "pass",
+      "testName": "@spec:AC-067 sobreposição de período no mesmo carro é recusada",
+      "method": "tap"
+    },
+    "AC-068": {
+      "status": "pass",
+      "testName": "@spec:AC-068 datas invertidas são recusadas",
+      "method": "tap"
+    },
+    "AC-069": {
+      "status": "pass",
+      "testName": "@spec:AC-069 carro em manutenção não pode ser reservado",
+      "method": "tap"
+    },
+    "AC-070": {
+      "status": "pass",
+      "testName": "@spec:AC-070 aprovar confirma a reserva",
+      "method": "tap"
+    },
+    "AC-071": {
+      "status": "pass",
+      "testName": "@spec:AC-071 recusar guarda o motivo internamente e NÃO bloqueia por conta própria",
+      "method": "tap"
+    },
+    "AC-130": {
+      "status": "pass",
+      "testName": "@spec:AC-130 bloquear na recusa é escolha do dono",
+      "method": "tap"
+    },
+    "AC-072": {
+      "status": "pass",
+      "testName": "@spec:AC-072 o carro não sai antes de a reserva ser confirmada",
+      "method": "tap"
+    },
+    "AC-073": {
+      "status": "pass",
+      "testName": "@spec:AC-073 registrar a retirada põe a locação em andamento",
+      "method": "tap"
+    },
+    "AC-074": {
+      "status": "pass",
+      "testName": "@spec:AC-074 devolução fora do prazo é finalizada e marcada como atrasada",
+      "method": "tap"
+    },
+    "AC-075": {
+      "status": "pass",
+      "testName": "@spec:AC-075 remarcar recalcula diárias e valor",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

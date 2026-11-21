@@ -1,0 +1,52 @@
+{
+  "feature": "mensagens-erro",
+  "timestamp": "2026-07-28T18:06:13.680Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-039": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português",
+      "method": "tap"
+    },
+    "AC-040": {
+      "status": "pass",
+      "testName": "@spec:AC-040 quando falta mais de um campo, avisa quantos faltam",
+      "method": "tap"
+    },
+    "AC-041": {
+      "status": "pass",
+      "testName": "@spec:AC-041 valor de diária que não é número explica isso",
+      "method": "tap"
+    },
+    "AC-042": {
+      "status": "pass",
+      "testName": "@spec:AC-042 categoria que não existe lista as que existem",
+      "method": "tap"
+    },
+    "AC-043": {
+      "status": "pass",
+      "testName": "@spec:AC-043 placa repetida diz que a placa já existe (e não \"registro duplicado\")",
+      "method": "tap"
+    },
+    "AC-044": {
+      "status": "pass",
+      "testName": "@spec:AC-044 link com identificador quebrado explica sem falar de banco de dados",
+      "method": "tap"
+    },
+    "AC-051": {
+      "status": "pass",
+      "testName": "@spec:AC-051 a resposta identifica cada campo com problema",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}

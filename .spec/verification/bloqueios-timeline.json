@@ -1,0 +1,62 @@
+{
+  "feature": "bloqueios-timeline",
+  "timestamp": "2026-07-28T18:15:33.228Z",
+  "gitRev": "b1320fc",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap \"tests/*.test.js\"",
+  "reporter": "tap",
+  "exitCode": 0,
+  "testsParsed": 131,
+  "results": {
+    "AC-094": {
+      "status": "pass",
+      "testName": "@spec:AC-094 cria um bloqueio de manutenção",
+      "method": "tap"
+    },
+    "AC-095": {
+      "status": "pass",
+      "testName": "@spec:AC-095 bloqueio em cima de bloqueio é recusado",
+      "method": "tap"
+    },
+    "AC-096": {
+      "status": "pass",
+      "testName": "@spec:AC-096 o mesmo período em outro veículo é permitido",
+      "method": "tap"
+    },
+    "AC-097": {
+      "status": "pass",
+      "testName": "@spec:AC-097 reserva em cima de bloqueio é barrada",
+      "method": "tap"
+    },
+    "AC-098": {
+      "status": "pass",
+      "testName": "@spec:AC-098 datas invertidas no bloqueio são recusadas",
+      "method": "tap"
+    },
+    "AC-099": {
+      "status": "pass",
+      "testName": "@spec:AC-099 não bloqueia veículo de outra locadora",
+      "method": "tap"
+    },
+    "AC-100": {
+      "status": "pass",
+      "testName": "@spec:AC-100 liberar o período remove o bloqueio e o carro volta a ser reservável",
+      "method": "tap"
+    },
+    "AC-101": {
+      "status": "pass",
+      "testName": "@spec:AC-101 a linha do tempo devolve veículos, reservas e bloqueios juntos",
+      "method": "tap"
+    },
+    "AC-102": {
+      "status": "pass",
+      "testName": "@spec:AC-102 a linha do tempo respeita a janela pedida",
+      "method": "tap"
+    }
+  },
+  "principles": {
+    "P-003": {
+      "status": "pass",
+      "testName": "@spec:AC-039 @principle:P-003 esquecer a placa diz QUAL campo falta, em português"
+    }
+  }
+}
