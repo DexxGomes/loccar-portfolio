@@ -1,0 +1,50 @@
+name: CI
+
+# Roda em todo push e pull request no main. Nada aqui precisa de banco:
+# os testes de integração (npm test na raiz) conversam com um Postgres de
+# verdade e ficam de fora — estes são os que rodam em qualquer máquina.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  painel:
+    name: Painel (render das telas + build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - name: Renderiza cada tela e procura undefined/NaN
+        run: npm test
+      - name: Build de produção
+        run: npm run build
+
+  api:
+    name: API (sintaxe de todos os arquivos)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - name: node --check em src/ e scripts/
+        run: |
+          find src scripts -type f \( -name '*.js' -o -name '*.mjs' \) -print0 \
+            | xargs -0 -n1 node --check
+          echo "Sintaxe ok em $(find src scripts -type f \( -name '*.js' -o -name '*.mjs' \) | wc -l) arquivos."

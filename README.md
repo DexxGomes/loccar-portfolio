@@ -1,5 +1,16 @@
 # LocCar — Reservas no WhatsApp para locadoras de veículos
 
+[![CI](https://github.com/DexxGomes/loccar-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/DexxGomes/loccar-portfolio/actions/workflows/ci.yml)
+
+<p align="center">
+  <img src="docs/cartao-loccar.svg" width="100%" alt="Animação: um cliente pede um carro no WhatsApp, a IA mostra os carros livres e faz a pré-reserva, e o dono aprova no painel." />
+</p>
+
+> 🇺🇸 **In English:** LocCar is a multi-tenant SaaS for car rental companies. Customers chat on the
+> company's WhatsApp, an AI agent (Claude) checks availability, quotes prices and creates a
+> pre-booking, and the owner approves it in a React web panel that also runs the fleet,
+> inspections, contracts and finances. Built with Node.js, Express, PostgreSQL (Supabase) and React.
+
 SaaS multi-locadora em que o cliente final conversa pelo **WhatsApp da locadora**,
 uma **IA (Claude, da Anthropic)** entende o pedido, mostra os carros livres com
 preço e faz uma **pré-reserva**. O dono recebe os documentos do cliente,
@@ -13,18 +24,79 @@ vistorias, do financeiro e dos contratos.
 
 ## 📸 Prints de tela
 
-<!--
-  Coloque as imagens em docs/prints/ e troque os comentários abaixo pelas imagens.
-  Dica: um print do computador e um do celular em cada linha mostra que o painel é responsivo.
--->
+Computador à esquerda, celular à direita: o painel foi pensado primeiro para o
+celular. Todos os dados dos prints são **fictícios**.
 
-| Tela | Computador | Celular |
-|---|---|---|
-| Hoje (o que precisa de você) | <!-- ![Hoje](docs/prints/hoje.png) --> _em breve_ | <!-- ![Hoje no celular](docs/prints/hoje-celular.png) --> _em breve_ |
-| Painel executivo | <!-- ![Painel](docs/prints/painel.png) --> _em breve_ | <!-- ![Painel no celular](docs/prints/painel-celular.png) --> _em breve_ |
-| Linha do tempo da frota | <!-- ![Linha do tempo](docs/prints/timeline.png) --> _em breve_ | <!-- ![Calendário no celular](docs/prints/calendario-celular.png) --> _em breve_ |
-| Vistoria digital | <!-- ![Vistoria](docs/prints/vistoria.png) --> _em breve_ | <!-- ![Vistoria no celular](docs/prints/vistoria-celular.png) --> _em breve_ |
-| Conversa no WhatsApp | <!-- ![WhatsApp](docs/prints/whatsapp.png) --> _em breve_ | |
+**Hoje** — a primeira tela depois do login: o que precisa de você, em ordem de urgência.
+
+<table>
+  <tr>
+    <td width="75%"><img src="docs/prints/hoje.png" alt="Tela Hoje no computador: devolução atrasada, pré-reserva para aprovar, conversas e retiradas do dia" /></td>
+    <td><img src="docs/prints/hoje-celular.png" width="220" alt="Tela Hoje no celular" /></td>
+  </tr>
+</table>
+
+**Conversa no WhatsApp** — a IA mostra os carros livres com preço, faz a pré-reserva, recebe a
+CNH e passa para um humano quando o pedido sai do que ela pode decidir.
+
+<table>
+  <tr>
+    <td width="75%"><img src="docs/prints/conversas.png" alt="Conversa em que a IA oferece dois carros, cria a pré-reserva e recebe a CNH" /></td>
+    <td><img src="docs/prints/conversas-celular.png" width="220" alt="A mesma conversa no celular" /></td>
+  </tr>
+</table>
+
+**Linha do tempo da frota** — o mês inteiro: o que sai (▲) e o que volta (▼) em cada dia, com
+atrasos destacados.
+
+<table>
+  <tr>
+    <td width="75%"><img src="docs/prints/timeline.png" alt="Calendário do mês com saídas e devoluções por dia e a lista do dia escolhido" /></td>
+    <td><img src="docs/prints/timeline-celular.png" width="220" alt="Calendário do mês no celular" /></td>
+  </tr>
+</table>
+
+**Vistoria digital** — quilometragem, combustível e avarias marcadas no desenho do carro, na
+retirada e na devolução, com o que mudou calculado sozinho.
+
+<table>
+  <tr>
+    <td width="75%"><img src="docs/prints/vistoria.png" alt="Vistorias de retirada e devolução lado a lado, com uma avaria nova na lanterna" /></td>
+    <td><img src="docs/prints/vistoria-celular.png" width="220" alt="Vistoria no celular" /></td>
+  </tr>
+</table>
+
+**Painel executivo** — receita, ocupação, ticket médio, funil do WhatsApp até a locação e os
+veículos que mais faturam.
+
+<img src="docs/prints/painel.png" alt="Painel com receita, locações, ticket médio, ocupação e gráfico de receita por dia" />
+
+**Dinheiro** — entrou, gastou, sobrou, e o que ainda está em aberto hoje.
+
+<table>
+  <tr>
+    <td width="75%"><img src="docs/prints/dinheiro.png" alt="Resumo do dinheiro do mês com gastos por categoria e valores em aberto" /></td>
+    <td><img src="docs/prints/dinheiro-celular.png" width="220" alt="Resumo do dinheiro no celular" /></td>
+  </tr>
+</table>
+
+**Leads** — funil de possíveis clientes em kanban, com aviso de quem está parado há dias.
+
+<table>
+  <tr>
+    <td width="75%"><img src="docs/prints/leads.png" alt="Kanban de leads com as colunas Novo, Qualificado, Negociação, Ganho e Perdido" /></td>
+    <td><img src="docs/prints/leads-celular.png" width="220" alt="Kanban de leads no celular" /></td>
+  </tr>
+</table>
+
+**Tema escuro**
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/prints/hoje-escuro.png" alt="Tela Hoje no tema escuro" /></td>
+    <td width="50%"><img src="docs/prints/painel-escuro.png" alt="Painel no tema escuro" /></td>
+  </tr>
+</table>
 
 ---
 
@@ -51,6 +123,7 @@ vistorias, do financeiro e dos contratos.
 **Qualidade**
 - 158 testes de integração com o *test runner* nativo do Node, rodando contra um banco real
 - Testes que renderizam as telas do painel fora do navegador (esbuild + `react-dom/server`)
+- GitHub Actions a cada push: render das telas, build do painel e checagem de sintaxe da API
 - Especificação *spec-anchored*: cada critério de aceite em `.spec/` é ligado a um teste com `@spec:AC-xxx`
 
 ---
