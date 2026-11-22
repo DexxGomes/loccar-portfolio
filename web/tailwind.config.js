@@ -129,13 +129,20 @@ export default {
         },
       },
 
+      // As animações com TRANSFORM usam `backwards`, não `both`. O último quadro
+      // de todas já é o estado natural do elemento, então segurar o fim não muda
+      // nada na tela — mas um transform que fica aplicado transforma o elemento
+      // em referência para todo `position: fixed` lá dentro. Com `both`, o
+      // contêiner das páginas (animate-fade-up) prendia modais e o visualizador
+      // de documentos à área do conteúdo, e o modal subia para fora da tela.
+      // `backwards` continua escondendo o item antes de um atraso (stagger).
       animation: {
         'fade-in': 'fade-in 0.25s ease-out both',
-        'fade-up': 'fade-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) both',
-        'scale-in': 'scale-in 0.18s cubic-bezier(0.16, 1, 0.3, 1) both',
-        'slide-left': 'slide-left 0.35s cubic-bezier(0.16, 1, 0.3, 1) both',
-        'slide-in-right': 'slide-in-right 0.28s cubic-bezier(0.16, 1, 0.3, 1) both',
-        'slide-in-left': 'slide-in-left 0.28s cubic-bezier(0.16, 1, 0.3, 1) both',
+        'fade-up': 'fade-up 0.35s cubic-bezier(0.16, 1, 0.3, 1) backwards',
+        'scale-in': 'scale-in 0.18s cubic-bezier(0.16, 1, 0.3, 1) backwards',
+        'slide-left': 'slide-left 0.35s cubic-bezier(0.16, 1, 0.3, 1) backwards',
+        'slide-in-right': 'slide-in-right 0.28s cubic-bezier(0.16, 1, 0.3, 1) backwards',
+        'slide-in-left': 'slide-in-left 0.28s cubic-bezier(0.16, 1, 0.3, 1) backwards',
         shimmer: 'shimmer 1.6s infinite',
         'pulse-ring': 'pulse-ring 2s ease-out infinite',
         'draw-line': 'draw-line 1.1s ease-out both',

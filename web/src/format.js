@@ -41,6 +41,15 @@ export function diaExtenso(iso) {
   });
 }
 
+/**
+ * Só a primeira letra da frase em maiúscula: "novembro de 2026" → "Novembro de 2026".
+ * (A classe CSS `capitalize` sobe a inicial de TODA palavra e dava "Novembro De 2026".)
+ */
+export function maiusculaInicial(texto) {
+  if (!texto) return texto;
+  return texto.charAt(0).toLocaleUpperCase('pt-BR') + texto.slice(1);
+}
+
 /** Tempo relativo simples: "agora", "há 5 min", "há 2 h", "há 3 d". */
 export function relativo(iso) {
   if (!iso) return '—';

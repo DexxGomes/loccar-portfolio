@@ -91,19 +91,27 @@ function Variacao({ valor, sufixo = 'vs. período anterior' }) {
   );
 }
 
-/** Cartão de indicador do topo. */
-function Indicador({ icon: Icon, rotulo, valor, hero = false, children }) {
+/**
+ * Cartão de indicador do topo.
+ *
+ * O número se ajusta à LARGURA DO CARTÃO (container query, unidade cqi): com
+ * tamanho fixo, "R$ 20.202,00" a 44px saía do cartão em 1280–1440px e era
+ * cortado no celular. 12cqi faz até ~13 caracteres caberem; o clamp mantém o
+ * destaque grande quando há espaço e um mínimo legível quando não há.
+ */
+function Indicador({ icon: Icon, rotulo, valor, hero = false, className, children }) {
   return (
-    <Card className="p-5" hover>
+    <Card className={cx('p-5 [container-type:inline-size]', className)} hover>
       <div className="flex items-center gap-2 text-[12px] text-suave mb-2.5">
         <Icon size={14} strokeWidth={2.2} />
         {rotulo}
       </div>
       <div
         className={cx(
-          'font-bold text-conteudo leading-none',
-          hero ? 'text-[40px] sm:text-[44px]' : 'text-[26px]'
+          'font-bold text-conteudo leading-none whitespace-nowrap tabular-nums',
+          hero ? 'text-[length:clamp(24px,12cqi,44px)]' : 'text-[length:clamp(18px,12cqi,26px)]'
         )}
+        title={typeof valor === 'string' ? valor : undefined}
       >
         {valor}
       </div>
@@ -234,7 +242,14 @@ export default function Painel() {
       {/* Indicadores                                                       */}
       {/* ---------------------------------------------------------------- */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <Indicador icon={Wallet} rotulo="Receita no período" valor={brl(indicadores.receita.valor)} hero>
+        {/* No celular a receita ocupa a linha toda: é o número que mais importa. */}
+        <Indicador
+          icon={Wallet}
+          rotulo="Receita no período"
+          valor={brl(indicadores.receita.valor)}
+          hero
+          className="col-span-2 lg:col-span-1"
+        >
           <Variacao valor={indicadores.receita.variacao} />
         </Indicador>
 

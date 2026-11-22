@@ -20,7 +20,7 @@ import {
   AlertTriangle,
   CalendarCheck,
 } from 'lucide-react';
-import { hora, telefone } from '../format.js';
+import { hora, telefone, maiusculaInicial } from '../format.js';
 import { Card, Badge, EmptyState, cx } from './ui.jsx';
 
 const DIAS_SEMANA = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
@@ -129,7 +129,7 @@ export default function CalendarioMes({ mesBase, reservas = [], diaEscolhido, on
         >
           <ChevronLeft size={20} />
         </button>
-        <span className="text-[15px] font-semibold text-conteudo capitalize">{rotuloMes}</span>
+        <span className="text-[15px] font-semibold text-conteudo">{maiusculaInicial(rotuloMes)}</span>
         <button
           onClick={() => onTrocarMes(1)}
           aria-label="Próximo mês"
@@ -241,12 +241,12 @@ export default function CalendarioMes({ mesBase, reservas = [], diaEscolhido, on
       {/* O dia escolhido, logo abaixo — no celular é só continuar rolando */}
       <div className="mt-5">
         <div className="flex items-center justify-between gap-3 mb-2.5">
-          <h2 className="text-sm font-semibold text-conteudo capitalize">
-            {diaEscolhido.toLocaleDateString('pt-BR', {
+          <h2 className="text-sm font-semibold text-conteudo">
+            {maiusculaInicial(diaEscolhido.toLocaleDateString('pt-BR', {
               weekday: 'long',
               day: '2-digit',
               month: 'long',
-            })}
+            }))}
           </h2>
           {temAperto && (
             <Badge tone="amber" icon={AlertTriangle}>

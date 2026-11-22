@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { api } from '../api.js';
 import { lerSessao } from '../sessao.js';
-import { brl } from '../format.js';
+import { brl, maiusculaInicial } from '../format.js';
 import Logo from '../components/Logo.jsx';
 import { Card, Button, ErrorBanner, Loading, EmptyState, cx } from '../components/ui.jsx';
 
@@ -216,7 +216,7 @@ export default function Relatorio() {
             </div>
             <div className="text-right">
               <div className="text-xs uppercase tracking-widest text-suave-2">Relatório mensal</div>
-              <div className="text-base font-bold text-conteudo capitalize mt-0.5">{rotuloMes}</div>
+              <div className="text-base font-bold text-conteudo mt-0.5">{maiusculaInicial(rotuloMes)}</div>
               <div className="text-[11px] text-suave-2 mt-0.5">Gerado em {geradoEm}</div>
             </div>
           </div>

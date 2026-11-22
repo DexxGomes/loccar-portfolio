@@ -22,7 +22,7 @@ import {
   Car,
 } from 'lucide-react';
 import { api } from '../api.js';
-import { dt, brl, telefone } from '../format.js';
+import { dt, brl, telefone, maiusculaInicial } from '../format.js';
 import { useToast } from '../components/Toast.jsx';
 import { Modal, useConfirm } from '../components/Modal.jsx';
 import { Skeleton } from '../components/Skeleton.jsx';
@@ -377,8 +377,8 @@ export default function Timeline() {
               }}
               className="bg-superficie border border-borda rounded-xl px-3 py-1.5 text-sm text-conteudo outline-none [color-scheme:light] dark:[color-scheme:dark]"
             />
-            <span className="text-[13px] text-suave capitalize ml-1">
-              {diaFoco.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' })}
+            <span className="text-[13px] text-suave ml-1">
+              {maiusculaInicial(diaFoco.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' }))}
             </span>
           </div>
 

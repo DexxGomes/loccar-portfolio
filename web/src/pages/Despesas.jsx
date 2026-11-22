@@ -17,7 +17,7 @@ import {
   CalendarDays,
 } from 'lucide-react';
 import { api } from '../api.js';
-import { brl, data as fmtData } from '../format.js';
+import { brl, data as fmtData, maiusculaInicial } from '../format.js';
 import { useToast } from '../components/Toast.jsx';
 import { Modal, useConfirm } from '../components/Modal.jsx';
 import {
@@ -189,8 +189,8 @@ export default function Despesas() {
         >
           <ChevronLeft size={17} />
         </button>
-        <span className="text-sm font-semibold text-conteudo capitalize min-w-[9rem] text-center">
-          {intervalo.rotulo}
+        <span className="text-sm font-semibold text-conteudo min-w-[9rem] text-center">
+          {maiusculaInicial(intervalo.rotulo)}
         </span>
         <button
           onClick={() => setMes((m) => deslocarMes(m, +1))}

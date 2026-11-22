@@ -69,7 +69,12 @@ retirada e na devolução, com o que mudou calculado sozinho.
 **Painel executivo** — receita, ocupação, ticket médio, funil do WhatsApp até a locação e os
 veículos que mais faturam.
 
-<img src="docs/prints/painel.png" alt="Painel com receita, locações, ticket médio, ocupação e gráfico de receita por dia" />
+<table>
+  <tr>
+    <td width="75%"><img src="docs/prints/painel.png" alt="Painel com receita, locações, ticket médio, ocupação e gráfico de receita por dia" /></td>
+    <td><img src="docs/prints/painel-celular.png" width="220" alt="Painel no celular, com a receita ocupando a linha inteira" /></td>
+  </tr>
+</table>
 
 **Dinheiro** — entrou, gastou, sobrou, e o que ainda está em aberto hoje.
 

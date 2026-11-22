@@ -8,6 +8,7 @@
 //    if (await confirmar({ titulo: 'Remover veículo?', tom: 'danger' })) { … }
 // ============================================================================
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { X, AlertTriangle } from 'lucide-react';
 import { Button, cx } from './ui.jsx';
 
@@ -79,7 +80,11 @@ export function Modal({
 
   if (!open) return null;
 
-  return (
+  // Renderiza direto no <body>. Dentro da tela, qualquer ancestral com
+  // `transform` (animação de entrada, cartão sendo arrastado, menu que abre
+  // com escala) vira a referência do `position: fixed` e a janela sai do
+  // lugar. Sem `document` (render no servidor dos testes) fica onde está.
+  const janela = (
     <div
       className="fixed inset-0 z-[90] flex items-end sm:items-center justify-center sm:p-4"
       role="dialog"
@@ -141,6 +146,8 @@ export function Modal({
       </div>
     </div>
   );
+
+  return typeof document === 'undefined' ? janela : createPortal(janela, document.body);
 }
 
 // ----------------------------------------------------------------------------
